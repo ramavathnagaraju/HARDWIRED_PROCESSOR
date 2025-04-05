@@ -1,43 +1,28 @@
-# HARDWIRED_PROCESSOR
+# 🧠 HARDWIRED_PROCESSOR
 
-A SystemVerilog-based implementation of an 8-bit Hardwired Control Processor. This project demonstrates the integration of a control unit and datapath using a hardwired approach, modeled and simulated using SystemVerilog.
-
----
-
-## 🧠 Project Description
-
-This processor is designed to perform basic operations like loading, arithmetic, and output through a hardwired control unit. It includes:
-
-- Program Counter (PC)
-- Accumulator
-- ALU (Arithmetic Logic Unit)
-- Memory Unit
-- Control Unit (hardwired)
-- Output Register
-
-The control logic is directly implemented using combinational logic, making it fast and simple for small-scale CPUs.
+> 🚀 **A SystemVerilog-based 8-bit Hardwired Control Processor**  
+> Designed to simulate a basic CPU architecture using modular design, control logic, and datapath elements.
 
 ---
 
-## 📁 Files
+## 📌 Overview
 
-| File | Description |
-|------|-------------|
-| `design.sv` | Main module defining the processor architecture |
-| `testbench.sv` | Testbench used to verify the processor functionality |
+This project implements a custom-designed **8-bit processor** using **SystemVerilog**, employing a **hardwired control unit** to manage the datapath. It is a simplified model that mirrors the operation of a real CPU, making it ideal for learning architecture-level digital design.
+
+> 🛠️ Built as part of personal learning and portfolio projects to demonstrate my understanding of processor design, digital systems, and HDL (Hardware Description Languages).
 
 ---
 
-## 🧪 How to Run (Simulation)
+## 🧰 Features
 
-You can simulate this project using any SystemVerilog-supported simulator such as:
+✅ 8-bit datapath  
+✅ Program Counter, ALU, Accumulator, Output Register  
+✅ Hardwired Control Logic  
+✅ Instruction Support: `LDA`, `ADD`, `SUB`, `OUT`, `HLT`  
+✅ Modular Design with separate testbench  
+✅ Simulatable in ModelSim, Vivado, or any SystemVerilog-supported tool  
 
-- ModelSim
-- Vivado Simulator
-- Icarus Verilog (partial support for SV)
-- Synopsys VCS (if available)
+---
 
-### Example using ModelSim:
-```bash
-vlog design.sv testbench.sv
-vsim CPU8_1_tb
+## 📂 File Structure
+
